@@ -15,6 +15,10 @@ export const NavbarComponent: React.FC = () =>{
                     <li className={pathname.startsWith(routesPrefixes.movements) ? classes.selected : ""}>
                         <Link to="">Movimientos</Link>
                     </li> : ""}
+                {pathname.startsWith(routesPrefixes.newAccount) ? 
+                    <li className={pathname.startsWith(routesPrefixes.newAccount) ? classes.selected : ""}>
+                        <Link to="">Agregar Cuenta</Link>
+                    </li> : ""}
                 <li className={pathname.startsWith(routesPrefixes.transfer) ? classes.selected : ""}>
                     <Link to={appRoutes.transfer}>Transferencias</Link>
                 </li>
